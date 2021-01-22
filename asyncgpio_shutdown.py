@@ -7,6 +7,8 @@ import sys
 
 
 class ShutdownManager:
+    """Manage shutdown for objects reacting to pin state changes. Shutdown is initiated by a signal.
+    """
     # shutdown code is from https://github.com/python-trio/trio/blob/master/notes-to-self/graceful-shutdown-idea.py
 
     def __init__(self, on_shutdown=None):
@@ -86,7 +88,7 @@ class ShutdownManager:
 
 class PinWatcher:
     """Watch a pin and maintain a list of events to be triggered based on the pin's state.
-    Manage initialization and shutdown for objects reacting to pin state changes.
+    Manage initialization for objects reacting to pin state changes.
 
     Arguments::
 
