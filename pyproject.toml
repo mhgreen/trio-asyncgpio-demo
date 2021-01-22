@@ -8,7 +8,6 @@ authors = ["Michael Green"]
 python = "^3.8"
 loguru = "^0.5.3"
 asyncgpio = "^0.4.4"
-trio-serial = "^0.1.0"
 trio = "^0.17.0"
 anyio = "^2.0.2"
 
